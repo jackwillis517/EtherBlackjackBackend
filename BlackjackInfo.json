@@ -1,0 +1,37 @@
+{
+  "network": "localhost",
+  "contract": {
+    "address": "0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82",
+    "signerAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "abi": [
+      "constructor(uint64 subscriptionId, address VRFCoordinator)",
+      "error OnlyCoordinatorCanFulfill(address have, address want)",
+      "event OwnershipTransferRequested(address indexed from, address indexed to)",
+      "event OwnershipTransferred(address indexed from, address indexed to)",
+      "event PlayerAdded(address indexed player, uint256 betAmount)",
+      "event PlayerLost(address indexed player)",
+      "event PlayerWon(address indexed player, uint256 winnings)",
+      "event RequestFulfilled(uint256 requestId, uint256[] randomWords)",
+      "event RequestSent(uint256 requestId, uint32 numWords)",
+      "function acceptOwnership()",
+      "function addPlayer() payable",
+      "function cards(uint256) view returns (uint256)",
+      "function dealersHand(uint256) view returns (uint256)",
+      "function getCurrentPlayer() view returns (address)",
+      "function getCurrentPlayersBet() view returns (uint256)",
+      "function getDealersHand() view returns (uint256[])",
+      "function getPlayersHand() view returns (uint256[])",
+      "function getRefund() payable",
+      "function getRequestStatus(uint256 _requestId) view returns (bool fulfilled, uint256[] randomWords)",
+      "function hit()",
+      "function lastRequestId() view returns (uint256)",
+      "function owner() view returns (address)",
+      "function playersHand(uint256) view returns (uint256)",
+      "function rawFulfillRandomWords(uint256 requestId, uint256[] randomWords)",
+      "function requestIds(uint256) view returns (uint256)",
+      "function s_requests(uint256) view returns (bool fulfilled, bool exists)",
+      "function stand() payable",
+      "function transferOwnership(address to)"
+    ]
+  }
+}
